@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<title>Tестовое задание</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="важные, ключевые, слова">
+<!--Перечень ключевых слов задаётся тегом <meta>, у которого атрибут name имеет значение keywords. 
+Ключевые слова (самые важные слова из содержания страницы) перечисляются в атрибуте content через запятую:-->
+ <meta name="description" content="краткое описание">
+ <!--Краткое описание (или аннотация) страницы часто используется поисковиками при отображении результатов поиска.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+<link rel="stylesheet" href="css/main.mini.css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="popup" class="hidden">
+		  <img src="img/button_close.jpg">		  
+		  <a href="#">
+			<img src="img/cross_for_buttonClose.png">
+		  </a>
+		  <div>
+			<h3>ОБРАТНАЯ СВЯЗЬ</h3>
+			<form action="index.html" method="post">
+				<label>Ваше имя *<input class="binding" name="name"></label>
+				<label>Телефон *<input type="tel" class="binding" name="tel"></label>
+				<label>Email *<input type="email" class="binding" name="email"></label>
+				<label>Сообщение<textarea></textarea></label>
+				<button id="submit">ОТПРАВИТЬ</button>
+			</form>
+			</div>
+  </div>
+  <div id="shutter" class="hidden"></div>
+  <header>
+		<div class="center">	
+			<img src="img/logo.png" width="274" height="100" alt="Изображение логотипа"> 	
+			<div id="phones">
+			   <p>+7(495) 735-XX-XX</p>
+			   <p>+7(495) 745-XX-XX</p>
+			</div>
+            <div id="feedback">
+				<a href="#">Обратная связь</a>
+            </div>   			
+		</div>	
+		
+  </header>
+  <nav>
+	  <div  class="center">
+		 <ul>
+			  <li><a href="#">Главная</a></li>
+			  <li><a href="#">Каталог</a></li>
+			  <li><a href="#" class="underline">Доставка и оплата</a></li>
+			  <li><a href="#">Прайс-листы</a></li>
+			  <li><a href="#">Контакты</a></li>
+		</ul>
+		</div>
+  </nav>
+  <div  id="slider">        
+			<img src="img/slider1.png" id="picture1">		 
+			<img src="img/slider2.png" id="picture2" class="hidden">
+      <div class="center">	
+         <div class="arrow">	  
+		  <img src="img/left_arrow.jpg" width="10" height="10">
+		  <img src="img/right_arrow.jpg" width="10" height="10">
+		 </div> 
+	  </div>
+  </div> 
+ 
+	  <div id="menu"> 
+	    <div class="center">
+		  <ul>
+			  <li><a href="#">Главная</a></li>
+			  <li><a href="#">Каталог</a></li>
+			  <li class="active"><a href="#" class="active">Бытовая техника</a></li>
+		  </ul>
+	   </div>	  
+  </div>
+  <main>
+      <div class="center">
+		  <aside>
+			  <ul>
+				  <li class="outer"><a href="#">Автомомбили</a>
+					<ul class="innerList">
+						 <li><a href="#">Иномарки</a></li>
+						  <li><a href="#">Отечественные</a></li>
+						  <li><a href="#">Новые</a></li>
+						  <li><a href="#">Б/У</a></li>
+					</ul>
+				  </li>
+				  <li class="outer"><a href="#">Бытовая техника</a>
+					<ul class="innerList">
+						  <li><a href="#">Микроволновки</a></li>
+						  <li><a href="#">Холодильники</a></li>
+						  <li><a href="#">Посудомоечные машины</a></li>
+						  <li><a href="#">Чайники</a></li>
+					</ul>
+				  </li>
+				  <li class="outer"><a href="#">Мобильная техника</a>
+					<ul class="innerList">
+						  <li><a href="#">Смарфоны</a></li>
+						  <li><a href="#">Планшеты</a></li>
+						  <li><a href="#">Аксессуары</a></li>
+						  <li><a href="#">Радиостанции</a></li>
+					</ul>
+				  </li>
+				  <li class="outer"><a href="#">Компьютеры</a>
+					<ul class="innerList">
+						  <li><a href="#">Настольные</a></li>
+						  <li><a href="#">Ультрабуки и ноутбуки</a></li>
+						  <li><a href="#">Комплектующие</a></li>
+					</ul>
+				  </li>
+				  <li class="outer active"><a href="#">Одежда</a>
+					<ul class="innerList active">
+						  <li><a href="#">Мужская</a></li>
+						  <li><a href="#">Женская</a></li>
+						  <li><a href="#">Детская</a></li>
+					</ul>
+				  </li>
+				    <li class="outer"><a href="#">Недвижимость</a>
+					<ul class="innerList">
+						  <li><a href="#">Новостройки</a></li>
+						  <li><a href="#">Вторичный рынок</a></li>
+						  <li><a href="#">Дачи и загородные участки</a></li>
+						  <li><a href="#">Нежилая</a></li>
+					</ul>
+				  </li>			 
+	            </ul>
+                <img src="img/MS_Excel.png" width="80">
+                <div><a href="#">Прайс-лист</a></div>				
+		  </aside>
+		   
+		  <div id="content">
+			  <div id="items">
+			     <div class="row">	
+				</div>	
+				<div class="row">
+				</div>				
+				</div>
+				<div id="links">
+					<div>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#" class="active">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+					</div>
+				</div>
+				<div id="colums">
+					<div>
+					Наш Интернет-магазин — низкие цены на миллионы товаров! Электроника, одежда, косметика, книги, зоотовары, продукты и многое другое. 
+					Быстрая доставка на дом, в пункты выдачи или почтоматы. ... Мы помогаем нашим продавцам рассказать об их товарах.
+					Для этого у нас есть разные способы продвижения. 
+					</div>
+					<div>
+					 Магазин основан в 1998 году Санкт-Петербургской компанией «Reksoft» и издательством «Terra Fantastica» как торговый сервис для продажи книг и видео (VHS) через Интернет. 
+					 Созданию магазина предшествовал запуск в октябре 1997 года интерактивной библиографической базы данных «Ad Verbum», 
+					 на которой были отработаны способы представления информации и структуры баз данных. 
+					 В начале 1998 года к «Ad Verbum» была добавлена также функциональность оформления заказа пользователем.
+					</div>
+				</div>
+		  </div>
+	  </div>
+  </main>
+  <footer>
+	   <div class="center">
+		   <div>2019 г.<br>
+		   <a href="#">&laquo;katzelen88@yandex.ru&raquo;</a>
+		   </div>
+			
+		   <ul id="downMenu">
+			   <li><a href="#">Главная</a></li>
+			   <li><a href="#">Каталог</a></li>	
+              <li><a href="#">Прайс-лист</a></li>			   
+			   <li><a href="#">Доставка и оплата</a></li>			   
+			   <li><a href="#">Контакты</a></li>			   
+		   </ul>
+		  
+		   <div class="last"> <a href="#"><span>Разработка сайта</span> -<br>
+			 &laquo;katzelen88@yandex.ru&raquo;</a>	  
+		   </div>
+	   </div>
+  </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
